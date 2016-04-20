@@ -1,0 +1,262 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+  color:white;
+  outline: none;
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  outline: none;
+}
+
+body{
+  outline: none;
+  color:black;
+}
+
+h1{
+  color:#E53935;
+}
+
+a{
+  color:white;
+}
+/**
+ * Layout CSS
+ */
+
+#header {
+  background-color:#C62828; 
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: left 0.2s;
+}
+
+#sidedrawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  left: -200px;
+  overflow: auto;
+  z-index: 2;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+#content-wrapper {
+  min-height: 100%;
+  overflow-x: hidden;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+  position: relative;
+  /* sticky bottom */
+  margin-bottom: -160px;*/
+  padding-bottom: 160px;*/
+}
+
+#foot {
+  min-height: 100%;
+  overflow-x: hidden;
+  margin-left: 0px;
+  transition: margin-left 0.2s;
+  position: relative;
+  height: 300px;
+  background-color: rgb(230,230,230);
+}
+
+@media (min-width: 768px) {
+  #header {
+    left: 200px;
+  }
+  
+  #sidedrawer {
+    transform: translate(200px);
+  }
+  
+  #content-wrapper {
+    margin-left: 200px;
+  }
+  
+  #footer {
+    margin-left: 200px;
+  }
+  
+  body.hide-sidedrawer #header {
+    left: 0;
+  }
+  
+  body.hide-sidedrawer #sidedrawer {
+    transform: translate(0px);
+  }
+  
+  body.hide-sidedrawer #content-wrapper {
+    margin-left: 0;
+  }
+  
+  body.hide-sidedrawer #footer {
+    margin-left: 0;
+  }
+}
+
+
+/**
+ * Toggle Sidedrawer
+ */
+#sidedrawer.active {
+  transform: translate(200px);
+}
+
+
+/**
+ * Header CSS
+ */
+
+.sidedrawer-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**
+ * Sidedrawer CSS
+ */
+
+#sidedrawer-brand {
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #C62828;
+  color:white;
+}
+
+#sidedrawer { 
+  background-color: #E53935;
+  color: white;
+}
+
+#sidedrawer ul {
+  list-style: none;
+}
+
+#sidedrawer > ul {
+  padding-left: 0px;
+}
+
+#sidedrawer > ul > li:first-child {
+  padding-top: 15px;
+}
+
+#sidedrawer li {
+  display: block;
+  padding: 15px 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#sidedrawer li a,{
+  text-decoration: none;
+  color: white;
+}
+
+#sidedrawer li a:hover{
+  text-decoration: none;
+  color:#E8F5E9;
+}
+
+#sidedrawer strong:hover {
+  /*background-color: #E0E0E0;*/
+}
+
+#sidedrawer strong + ul > li {
+  padding: 6px 0px;
+}
+
+#sidebar-toggle{
+  margin:0;
+  padding:0;
+}
+
+/* header */
+
+#header td{
+  width: 33%;
+  color:white;
+}
+
+#header td ul li {
+  margin-top: 10px;
+}
+
+#header td ul li a{
+  color: white;
+  text-decoration: none;
+}
+.pagination>li.active>a,
+.pagination>li.active{
+  border: 1px solid #E53935;
+  outline: none;
+}
+
+.pagination>li>a{
+  color:#E53935;
+  outline: none;
+}
+
+.pagination>li.active,
+.pagination>li.active:hover,
+.pagination>li.active>a,
+.pagination>li.active>a:hover,
+.pagination>li.active:focus,
+.pagination>li.active>a:focus{
+  background: #E53935;
+  outline: none;
+}
+
+.selected{
+  background-color: red;
+}
+
+.mui-btn--primary,
+.mui-btn--primary:active,
+.mui-btn--primary:focus{
+  background-color:#E53935;
+}
+
+.mui-btn--primary:hover{
+  background-color: #F44336;
+}
+
+#add-transaction-button{
+  position:fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color:#E53935;   
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

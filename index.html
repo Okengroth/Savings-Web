@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+    <link href="http://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="sidedrawer" class="mui--no-user-select">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height">Menu Principal</div>
+      <div class="mui-divider"></div>
+      <ul>
+        <li>
+          <a href="#">Transacciones</a>
+        </li>
+        <li>
+          <a href="#">Resumen</a>
+        </li>
+      </ul>
+    </div>
+    <header id="header" class="mui-appbar mui--z2">
+      <div class="mui-container-fluid">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td align="left" id="sidebar-toggle">
+              <a class="sidedrawer-toggle mui--visible-xs-inline-block mui--visible-sm-inline-block js-show-sidedrawer">☰</a>
+              <a id="menu-toggle" class="sidedrawer-toggle mui--hidden-xs mui--hidden-sm js-hide-sidedrawer">☰</a>
+            </td>
+            <td align="center">
+              <span class="mui--text-title">Savings.io</span>
+            </td> 
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper">
+      <div class="mui--appbar-height"></div>
+      <div class="mui-container-fluid">
+        <br>
+        <div class="mui-panel">
+          
+          <h1>Gastos</h1>
+          <div class="mui-divider"></div>
+          <br>
+          <table id="transaction-table" class="table table-striped table-bordered" width="100%">
+            <!-- <table id="example" class="display" cellspacing="0" width="100%"> -->
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Descripcion</th>
+                <th>Fecha</th>
+                <th>Monto</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="3"></td>
+                <td colspan="1">Total</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>esto</td>
+                <td>12/12/1993</td>
+                <td>1000</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <!-- <button id="floating-button" class="mui-btn mui-btn--primary mui-btn--fab">+</button> -->
+
+      </div>
+  <button id="add-transaction-button"  class="mui-btn mui--z2 mui-btn--fab">+</button>
+
+  <div id="foot">
+    <div class="mui-container-fluid">
+    </div>
+  </div>  
+  <div id="transaction-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mui-textfield">
+              <input id="transaction-description" placeholder="..." type="text">
+              <label>Descripcion</label>
+            </div>
+            <div class="mui-textfield">
+              <input id="transaction-date" value=""  placeholder="dd-mm-yyyy" type="text">
+              <label>Fecha</label>
+            </div>
+            <div class="mui-textfield">
+              <div>
+                <input id="transaction-amount" type="number" placeholder="0.00" min="0" step="0.01">
+                <label>Monto</label>
+              </div>
+            </div>
+          </form>        
+        </div>
+        <div class="modal-footer">
+          <button id="modalSubmit" type="submit" class="mui-btn mui-btn--primary mui-btn--raised">Save</button>
+          <button type="button" class="mui-btn mui-btn--raised" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  
+  <script src="http://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+  <script src="http://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>                  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="static/landpage.js"></script>
+  <script src="static/app.js"></script>
+  <script type="text/javascript">
+
+  
+</script>
+</html>
